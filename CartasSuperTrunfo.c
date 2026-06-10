@@ -104,8 +104,18 @@ int main() {
   printf("PIB: Carta1 venceu %d\n", pib > pib2);
   printf("Pontos Turisticos: Carta1 venceu %d\n", p_turisticos > p_turisticos2);
   printf("PIB per capita: Carta1 venceu %d\n", pibPerCapita > pibPerCapita2);
-  printf("Super Poder: Carta1 venceu %d\n", SuperPoder > SuperPoder2);
+  printf("Super Poder: Carta1 venceu %d\n\n", SuperPoder > SuperPoder2);
 
-return 0;
+  printf("***Comparacao Final***\n\n");
+  printf("Carta 1 - %s: %d\n", nome, populacao);
+  printf("Carta 2 - %s: %d\n", nome2, populacao2);
+  if (populacao > populacao2) {
+    printf("Carta 1 venceu a comparacao final!\n");
+  } else if (populacao < populacao2) {
+    printf("Carta 2 venceu a comparacao final!\n");
+  } else {
+    printf("Empate na comparacao final!\n");
+  }
 
-} 
+  return 0;
+}
